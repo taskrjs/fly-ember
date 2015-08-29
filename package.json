@@ -1,0 +1,40 @@
+{
+  "name": "fly-ember",
+  "version": "0.0.0",
+  "description": "Ember plugin for Fly.",
+  "license": "MIT",
+  "repository": "https://github.com/bucaran/fly-ember",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "fly",
+    "fly-plugin",
+    "ember"
+  ],
+  "scripts": {
+    "lint": "eslint *.js",
+    "setup": "npm i && npm test",
+    "spec": "npm run test | tspec",
+    "test": "npm run lint && npm run tape",
+    "build": "echo No build task specified.",
+    "deploy": "npm run test && git push origin master && npm publish",
+    "tape": "node --harmony --harmony_arrow_functions ./node_modules/tape/bin/tape test/*.js"
+  },
+  "author": {
+    "name": "Jorge Bucaran",
+    "email": "jbucaran@me.com",
+    "url": "http://github.com/bucaran"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.11.0"
+  }
+}
