@@ -34,11 +34,11 @@ export default function* () {
 }
 ```
 
-# Disclaimer
+## Disclaimer
 
 This program is free software and it comes without any warranty, to the extent permitted by applicable law. `fly-ember` is not associated with the [Ember.js](https://github.com/emberjs) or  [ember-cli](https://github.com/ember-cli) organizations.
 
-# License
+## License
 
 [MIT][mit] © [Jorge Bucaran][author] et [al][contributors]
 
