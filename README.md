@@ -4,7 +4,7 @@
   </a>
 </div>
 
-> [Ember](https://github.com/bucaran/fly-ember) plugin for _[Fly][fly]_.
+> [Ember](http://emberjs.com/) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
 [![npm package][npm-ver-link]][releases]
@@ -13,7 +13,7 @@
 [![][mit-badge]][mit]
 
 ## Usage
-> Check out the [documentation](PLUGIN_DOCUMENTATION) to see the available options.
+> Check out the [documentation](http://emberjs.com/blog/2015/02/05/compiling-templates-in-1-10-0.html) to see the available options.
 
 ### Install
 
@@ -25,9 +25,18 @@ npm install -D fly-ember
 
 ```js
 export default function* () {
-  yield ...
+  yield this
+    .source("app/templates/*.hbs")
+    .ember()
+    .babel({ modules: "amd" })
+    .concat("app.js")
+    .target("dist/assets")
 }
 ```
+
+# Disclaimer
+
+This program is free software and it comes without any warranty, to the extent permitted by applicable law. `fly-ember` is not associated with the [Ember.js](https://github.com/emberjs) or  [ember-cli](https://github.com/ember-cli) organizations.
 
 # License
 
