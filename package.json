@@ -6,7 +6,8 @@
   "repository": "https://github.com/bucaran/fly-ember",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "keywords": [
     "fly",
